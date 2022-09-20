@@ -1,0 +1,36 @@
+POST http://localhost:5000/users/register
+Content-Type: application/json
+
+{
+    "name": "Endang",
+    "email": "endang@namiraedutech.id",
+    "password": "123456",
+    "profession": "Office Boy"
+}
+
+###
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "email": "kanglerian@namiraedutech.id",
+    "password": "kanglerian123"
+}
+
+###
+PUT http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "Leriaaan",
+    "email": "kanglerian@namiraedutech.id",
+    "password": "kanglerian123",
+    "avatar": "https://google.com/",
+    "profession": "Web Developer"
+}
+
+###
+GET http://localhost:5000/users/1
+
+###
+GET http://localhost:5000/users?user_ids[]=5&user_ids[]=7
